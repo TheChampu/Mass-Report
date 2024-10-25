@@ -1,11 +1,15 @@
-# import asyncio
-# import json, os
-# from pyrogram import Client, enums
-# #loads config
+import asyncio
+import json
+import os
+from pyrogram import Client, enums
 
-# #workdir = 'session/'disconect
-# async def main():
-            # function not available yet
+# Load config
+workdir = 'session/disconnect'
 
-            
-# asyncio.run(main())
+async def main():
+    # Functionality to be implemented here
+    print("Main function is running.")
+
+# Run the main function
+if __name__ == "__main__":
+    asyncio.run(main())
