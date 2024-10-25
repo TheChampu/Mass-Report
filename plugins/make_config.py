@@ -89,7 +89,7 @@ async def make_config(bot: Client, msg: Message):
             new_account = {
                 "Session_String": session.text,
                 "OwnerUid": AccountHolder['id'],
-                "OwnerName": AccountHolder['first _name']
+                "OwnerName": AccountHolder.get('first_name', 'Unknown Name')  # Default value if key does not exist
             }
             config["accounts"].append(new_account)
 
